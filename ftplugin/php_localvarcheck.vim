@@ -273,6 +273,7 @@ function! s:Parse(src)
         \ . '|<global>'
         \ . '|<function>'
         \ . '|<class>'
+        \ . '|::class'
         \ . '|[;(){}]'
   let items = []
   let i = match(a:src, pat_syntax)
